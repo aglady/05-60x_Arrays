@@ -1,8 +1,17 @@
 public class SortedIntArray {
     private IntArray array;
 
+    public int get(int index){
+        return array.get(index);
+    }
+
+    public void set(int index, int value){
+        array.set(index, value);
+        sort();
+    }
+
     public SortedIntArray(IntArray array){
-        this.array = array;
+        this.array = new IntArray(array);
         sort();
     }
 

@@ -5,4 +5,6 @@ void main() {
     SortedIntArray sortedArray = new SortedIntArray(array);
     System.out.println(sortedArray);
     System.out.println(array);
+    sortedArray.set(0, 100);
+    System.out.println(sortedArray);
 }

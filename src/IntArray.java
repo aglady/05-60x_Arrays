@@ -17,6 +17,10 @@ public class IntArray {
         fillRandom();
     }
 
+    public IntArray(IntArray intArray){
+        this.array = Arrays.copyOf(intArray.array, intArray.array.length);
+    }
+
     private void fillRandom(){
         Random r = new Random(0);
         for (int i = 0; i < array.length; i++){
